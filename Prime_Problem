@@ -1,16 +1,21 @@
 // Prime Problem
 
-
-let num = 13;
-let count = 0;
-for(let i = 1;i<=num;i++){
+  
+  function chekprime(num)
+  {
+    let factor = 0;
+for(let i = 2;i<=num;i++){
 if(num%i==0){
-count++
+   factor++
 }
 }
-if(count==2){
-console.log("Prime")
+if(factor==2){
+  return true 
 }
 else{
-console.log("Not Prime")
+ return false
 }
+
+}
+console.log(chekprime(13))
+ 
